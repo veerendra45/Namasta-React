@@ -1,0 +1,29 @@
+{
+  "name": "namasta---react",
+  "version": "1.0.0",
+  "description": "this is Namasta React",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veerendra45/Namasta-React.git"
+  },
+  "keywords": [],
+  "author": "veerendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veerendra45/Namasta-React/issues"
+  },
+  "homepage": "https://github.com/veerendra45/Namasta-React#readme",
+  "devDependencies": {
+    "parcel": "^2.15.1"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist" : [
+    "last 2 version"
+  ]
+}
