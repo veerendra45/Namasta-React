@@ -13,7 +13,7 @@ const restaurantList = [
     cuisines: ["Hyderabadi", "Biryani"],
     rating: "4.2",
     deliveryTime: "32 mins",
-    image: "https://images.unsplash.com/photo-1604908177340-3f3c3d4e9b6e?auto=format&fit=crop&w=800&q=80"
+    image: "https://tse4.mm.bing.net/th?id=OIP.cYywe_ua6wj5Ee6sn54XagHaEK&pid=Api&P=0&h=180"
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const restaurantList = [
     cuisines: ["Mexican", "Fast Food"],
     rating: "4.1",
     deliveryTime: "25 mins",
-    image: "https://images.unsplash.com/photo-1601924582975-4a3c90f8b77e?auto=format&fit=crop&w=800&q=80"
+    image: "https://i1.nyt.com/images/2015/12/16/dining/16TOPDISHES-slide-F26S/16TOPDISHES-slide-F26S-superJumbo.jpg"
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const restaurantList = [
     cuisines: ["Burgers", "American"],
     rating: "4.0",
     deliveryTime: "30 mins",
-    image: "https://images.unsplash.com/photo-1601925261607-3d52bd736aa5?auto=format&fit=crop&w=800&q=80"
+    image: "https://tse2.mm.bing.net/th?id=OIP.ZNUnu8qNDdjI_AB_WGK_-gHaHa&pid=Api&P=0&h=180"
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const restaurantList = [
     cuisines: ["Pizza", "Italian"],
     rating: "4.3",
     deliveryTime: "28 mins",
-    image: "https://images.unsplash.com/photo-1601925248290-3a1d67877c0e?auto=format&fit=crop&w=800&q=80"
+    image: "https://tse2.mm.bing.net/th?id=OIP.2OZEaXLuA54IOkiT7VY2UwHaEo&pid=Api&P=0&h=180"
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const restaurantList = [
     cuisines: ["Sandwiches", "Healthy Food"],
     rating: "4.2",
     deliveryTime: "22 mins",
-    image: "https://images.unsplash.com/photo-1613145993484-013ed973f8da?auto=format&fit=crop&w=800&q=80"
+    image: "https://tse2.mm.bing.net/th?id=OIP.StvT4k_gIXcXdH0UxvLy4AAAAA&pid=Api&P=0&h=180"
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const restaurantList = [
     cuisines: ["Fried Chicken", "Fast Food"],
     rating: "4.1",
     deliveryTime: "26 mins",
-    image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80"
+    image: "https://i.pinimg.com/originals/cb/a2/93/cba293ee83560c5606207ec6a1ceda12.jpg"
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const restaurantList = [
     cuisines: ["Pizza", "Italian"],
     rating: "4.0",
     deliveryTime: "29 mins",
-    image: "https://images.unsplash.com/photo-1627494633274-0c4b38616965?auto=format&fit=crop&w=800&q=80"
+    image: "https://tse2.mm.bing.net/th?id=OIP.tRBmQR3ShotnzAHIhsKDmgHaE8&pid=Api&P=0&h=180"
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const restaurantList = [
     cuisines: ["Snacks", "Sweets", "Indian"],
     rating: "4.5",
     deliveryTime: "35 mins",
-    image: "https://images.unsplash.com/photo-1596797038530-2a59e0b1c89e?auto=format&fit=crop&w=800&q=80"
+    image: "https://tse1.mm.bing.net/th?id=OIP.1JfCAuCUAw4fEQB2oUmWfAHaE7&pid=Api&P=0&h=180"
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ const restaurantList = [
     cuisines: ["Momos", "Chinese"],
     rating: "4.3",
     deliveryTime: "27 mins",
-    image: "https://images.unsplash.com/photo-1630694979895-e0eac5eaf7e4?auto=format&fit=crop&w=800&q=80"
+    image: "https://www.agrodolce.it/app/uploads/2013/10/Sforno07.jpg"
   }
 ];
 

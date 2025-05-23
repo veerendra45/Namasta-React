@@ -18,3 +18,9 @@
   - HTTPs
   - Tree Shaking - remove unused code
   - Difff dev and production bundles
+
+# Let's get Hookes
+ - useState
+ - Reconciliaition Algo -- React Fiber
+ - Virtual DOM
+ - Actual DOM 
