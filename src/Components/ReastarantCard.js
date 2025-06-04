@@ -1,8 +1,11 @@
 import React from "react";
 import { CLD_IMG } from "../Utiles/constant";
 
-const ReastarantCard = ({id, name, cuisines, avgRating, sla, cloudinaryImageId}) => {
-    // const {} = data;
+const ReastarantCard = ({data}) => {
+    if (!data.info) {
+        return null;
+    }
+    const {id, name, cuisines, avgRating, sla, cloudinaryImageId} = data?.info;
     return(
         <div className="res-card">
             <img className="res-img" src={CLD_IMG+cloudinaryImageId} alt={name}/>

@@ -9,26 +9,21 @@ const Body = () => {
     const [searchTxt, setSearchTxt] = useState("");
     //data fetching
     const fetchData = async () => {
-        try{
-            const data = await fetch(
-                "https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=13.6287557&lng=79.4191795&carousel=true&third_party_vendor=1"
-            );
-            const json = await data.json();
-            console.log(json);
-            const restaurants = json?.data?.cards?.find(
-            (card) => card?.card?.gridElements?.infoWithStyle?.restaurants)
-            ?.card?.gridElements?.infoWithStyle?.restaurants || [];   
-
-            setListOfRestaurant(restaurants);
-            setFilteredRestaurant(restaurants);
-        }catch(error){
-            console.log(error);
-        }
+        const data = await fetch(
+            "https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=13.6287557&lng=79.4191795&carousel=true&third_party_vendor=1"
+        );
+        const json = await data.json();
+        console.log(json);
+        const restaurants = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants; 
+        console.log(restaurants);
+        setListOfRestaurant(restaurants);
+        setFilteredRestaurant(restaurants);
     }
     //useEffect
     useEffect(() => {
         fetchData();
     }, []);
+
     return ((listOfRestaurant.length === 0) ? <Shimmer /> :  (
         <div className="body-container">
             <div className="filter">
@@ -37,13 +32,13 @@ const Body = () => {
                     <button
                     onClick={()=>{
                         const filteredList = listOfRestaurant.filter(
-                            res => res.name.toLowerCase().includes(searchTxt));
+                            res => res?.name?.toLowerCase().includes(searchTxt.toLowerCase()));
                             setFilteredRestaurant(filteredList);
                     }}>Search</button>
                 </div>
                 <div>
                     <button className="filter-btn" onClick={() => {
-                        const filterList = restaurantList.filter(res => res.rating >= 4)
+                        const filterList = restaurantList.filter(res => res.avgRating >= 4)
                         setListOfRestaurant(filterList);
                         // console.log(listOfRestaurant);}
                     }}>
@@ -53,7 +48,7 @@ const Body = () => {
             </div>
             <div className="res-container">
                 {
-                    filteredRestaurant.map(resta => <ReastarantCard key={resta.id} data={resta}/>)
+                    filteredRestaurant.map(resta => <ReastarantCard key={resta.info.id} data={resta}/>)
                 }
             </div>
         </div>
