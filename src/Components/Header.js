@@ -1,6 +1,7 @@
 import { LOGO_IMG } from "../Utiles/constant";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../Utiles/useOnlineStatus";
 
 export const Header = () => {
     const [btnName, setBtnName] = useState("LogIn");
@@ -9,6 +10,7 @@ export const Header = () => {
         console.log("useEFfect Called")},
         [btnName]
     );
+    const onlineStatus = useOnlineStatus();
     return (
         <div className="header">
             <div className="logo-container">
@@ -17,6 +19,9 @@ export const Header = () => {
             <div className="nav-items">
                 <ul>
                     <li>
+                        Online Status : {onlineStatus ? "💚" : "❤️"} 
+                    </li>
+                    <li>
                         <Link to="/">Home</Link>
                     </li>
                     <li>
@@ -24,6 +29,9 @@ export const Header = () => {
                     </li>
                     <li>
                         <Link to="/contact">Contact Us</Link>
+                    </li>
+                    <li>
+                        <Link to="/grocery">Grocery</Link>
                     </li>
                     <li>Cart</li>
                     <button className="login" onClick={() => {
